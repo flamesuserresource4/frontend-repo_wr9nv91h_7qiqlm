@@ -6,7 +6,7 @@ export default function Hero() {
     <section className="relative overflow-hidden pt-24 md:pt-28 lg:pt-32">
       <div className="absolute inset-0">
         <Spline scene="https://prod.spline.design/ezRAY9QD27kiJcur/scene.splinecode" style={{ width: '100%', height: '100%' }} />
-        <div className="pointer-events-none absolute inset-0 bg-gradient-to-b from-white/60 via-white/80 to-white" />
+        <div className="pointer-events-none absolute inset-0 bg-gradient-to-b from-[#EFEFEF]/60 via-[#EFEFEF]/85 to-[#EFEFEF]" />
       </div>
 
       <div className="relative z-10 mx-auto max-w-6xl px-4">
@@ -16,17 +16,17 @@ export default function Hero() {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6 }}
-              className="text-4xl font-extrabold tracking-tight text-gray-900 sm:text-5xl lg:text-6xl"
+              className="text-4xl font-extrabold tracking-tight text-[#393E46] sm:text-5xl lg:text-6xl"
             >
-              Discover venues from social posts—organized by AI.
+              AI that turns social posts into venue lists you can actually use.
             </motion.h1>
             <motion.p
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.7, delay: 0.1 }}
-              className="mt-4 text-lg leading-relaxed text-gray-700 md:max-w-xl"
+              className="mt-4 text-lg leading-relaxed text-[#393E46]/80 md:max-w-xl"
             >
-              Locat8 turns screenshots, links, and DMs into clean, searchable lists you can explore, plan with, and share—without the chaos.
+              Energetic, urban, and built for the way you explore. Drop screenshots, paste links, and watch Locat8 curate your city.
             </motion.p>
             <motion.div
               initial={{ opacity: 0, y: 20 }}
@@ -63,7 +63,7 @@ function WaitlistForm() {
       const data = await res.json();
       if (data?.ok) {
         window.dispatchEvent(new CustomEvent('analytics', { detail: { type: 'signup', email: payload.email } }));
-        alert('You\'re on the list! We\'ll be in touch soon.');
+        alert("You're on the list! We'll be in touch soon.");
         e.currentTarget.reset();
       } else {
         alert('Something went wrong. Please try again.');
@@ -76,14 +76,14 @@ function WaitlistForm() {
   return (
     <form onSubmit={handleSubmit} className="relative flex w-full max-w-xl flex-col gap-3 rounded-xl bg-white/70 p-3 backdrop-blur-md ring-1 ring-black/5 shadow-sm">
       <div className="flex gap-2">
-        <input name="email" type="email" required placeholder="Enter your email"
-          className="w-full rounded-lg border border-gray-200 bg-white px-4 py-3 text-gray-900 placeholder:text-gray-400 focus:border-blue-500 focus:outline-none focus:ring-2 focus:ring-blue-500/20" />
-        <button type="submit" className="shrink-0 rounded-lg bg-blue-600 px-5 py-3 font-semibold text-white shadow hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-500/30">
+        <input name="email" type="email" required placeholder="Email address"
+          className="w-full rounded-lg border border-[#393E46]/30 bg-white px-4 py-3 text-[#393E46] placeholder:text-[#393E46]/50 focus:border-[#F96167] focus:outline-none focus:ring-2 focus:ring-[#F96167]/20" />
+        <button type="submit" className="shrink-0 rounded-lg bg-[#F96167] px-5 py-3 font-semibold text-white shadow hover:brightness-95 focus:outline-none focus:ring-2 focus:ring-[#F96167]/30">
           Join waitlist
         </button>
       </div>
-      <input name="name" type="text" placeholder="Your name (optional)" className="w-full rounded-lg border border-gray-200 bg-white px-4 py-2 text-gray-900 placeholder:text-gray-400 focus:border-blue-500 focus:outline-none focus:ring-2 focus:ring-blue-500/20" />
-      <p className="text-xs text-gray-500">By joining, you agree to receive occasional emails about Locat8. Unsubscribe anytime.</p>
+      <input name="name" type="text" placeholder="Your name (optional)" className="w-full rounded-lg border border-[#393E46]/30 bg-white px-4 py-2 text-[#393E46] placeholder:text-[#393E46]/50 focus:border-[#F96167] focus:outline-none focus:ring-2 focus:ring-[#F96167]/20" />
+      <p className="text-xs text-[#393E46]/70">By joining, you agree to receive occasional emails about Locat8. Unsubscribe anytime.</p>
     </form>
   );
 }

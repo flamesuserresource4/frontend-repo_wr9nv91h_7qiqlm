@@ -26,14 +26,14 @@ const features = [
 
 export default function Features() {
   return (
-    <section className="relative py-16 md:py-20">
+    <section id="features" className="relative py-16 md:py-20">
       <div className="mx-auto max-w-6xl px-4">
         <motion.h2
           initial={{ opacity: 0, y: 10 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.5 }}
-          className="text-3xl font-bold text-gray-900 md:text-4xl"
+          className="text-3xl font-bold text-[#393E46] md:text-4xl"
         >
           From chaos to curated
         </motion.h2>
@@ -45,11 +45,11 @@ export default function Features() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.4, delay: i * 0.05 }}
-              className="rounded-2xl border border-gray-100 bg-white p-6 shadow-sm hover:shadow-md transition"
+              className="rounded-2xl border border-[#393E46]/10 bg-white p-6 shadow-sm hover:shadow-md transition"
             >
-              <f.icon className="h-6 w-6 text-blue-600" />
-              <h3 className="mt-4 font-semibold text-gray-900">{f.title}</h3>
-              <p className="mt-2 text-sm text-gray-600">{f.desc}</p>
+              <f.icon className="h-6 w-6 text-[#F96167]" />
+              <h3 className="mt-4 font-semibold text-[#393E46]">{f.title}</h3>
+              <p className="mt-2 text-sm text-[#393E46]/80">{f.desc}</p>
             </motion.div>
           ))}
         </div>

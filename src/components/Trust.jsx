@@ -18,13 +18,13 @@ export default function Trust() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.5 }}
-              className="text-2xl font-bold text-gray-900 md:text-3xl"
+              className="text-2xl font-bold text-[#393E46] md:text-3xl"
             >
               Built for how you actually save places
             </motion.h3>
-            <p className="mt-4 text-gray-600">Early interest from hundreds of planners, foodies, and creators.</p>
-            <div className="mt-6 flex items-center gap-4 text-sm text-gray-600">
-              <Users className="h-5 w-5 text-blue-600" /> 1,200+ people joined the waitlist
+            <p className="mt-4 text-[#393E46]/80">Early interest from hundreds of planners, foodies, and creators.</p>
+            <div className="mt-6 flex items-center gap-4 text-sm text-[#393E46]">
+              <Users className="h-5 w-5 text-[#F96167]" /> 1,200+ people joined the waitlist
             </div>
           </div>
           <div className="grid gap-4 sm:grid-cols-2">
@@ -35,13 +35,13 @@ export default function Trust() {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ duration: 0.4, delay: i * 0.05 }}
-                className="rounded-2xl border border-gray-100 bg-white p-5 shadow-sm"
+                className="rounded-2xl border border-[#393E46]/10 bg-white p-5 shadow-sm"
               >
                 <div className="flex items-center gap-3">
-                  <User className="h-5 w-5 text-blue-600" />
-                  <span className="font-medium text-gray-900">{p.title}</span>
+                  <User className="h-5 w-5 text-[#F96167]" />
+                  <span className="font-medium text-[#393E46]">{p.title}</span>
                 </div>
-                <p className="mt-2 text-sm text-gray-600">{p.desc}</p>
+                <p className="mt-2 text-sm text-[#393E46]/80">{p.desc}</p>
               </motion.div>
             ))}
           </div>

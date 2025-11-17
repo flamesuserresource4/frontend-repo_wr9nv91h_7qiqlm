@@ -11,7 +11,7 @@ export default function Showcase() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.5 }}
-              className="text-2xl font-bold text-gray-900 md:text-3xl"
+              className="text-2xl font-bold text-[#393E46] md:text-3xl"
             >
               Social to list, in seconds
             </motion.h3>
@@ -20,7 +20,7 @@ export default function Showcase() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.5, delay: 0.05 }}
-              className="mt-4 text-gray-600"
+              className="mt-4 text-[#393E46]/80"
             >
               Paste posts, drop screenshots, or forward links. Locat8 detects venues, maps addresses, and saves everything to a list you can sort and share.
             </motion.p>
@@ -32,15 +32,15 @@ export default function Showcase() {
             transition={{ duration: 0.5 }}
             className="relative"
           >
-            <div className="rounded-2xl border border-gray-100 bg-white p-4 shadow-lg">
-              <div className="aspect-[9/16] w-full rounded-xl bg-gradient-to-br from-blue-50 via-purple-50 to-pink-50" />
+            <div className="rounded-2xl border border-[#393E46]/10 bg-white p-4 shadow-lg">
+              <div className="aspect-[9/16] w-full rounded-xl bg-gradient-to-br from-[#EFEFEF] via-white to-[#EFEFEF]" />
               <div className="mt-3 grid grid-cols-3 gap-2">
-                <div className="h-16 rounded-lg bg-gray-100" />
-                <div className="h-16 rounded-lg bg-gray-100" />
-                <div className="h-16 rounded-lg bg-gray-100" />
+                <div className="h-16 rounded-lg bg-[#EFEFEF]" />
+                <div className="h-16 rounded-lg bg-[#EFEFEF]" />
+                <div className="h-16 rounded-lg bg-[#EFEFEF]" />
               </div>
             </div>
-            <div className="pointer-events-none absolute -inset-2 -z-0 blur-2xl bg-gradient-to-tr from-blue-400/20 via-fuchsia-400/20 to-emerald-400/20 rounded-3xl" />
+            <div className="pointer-events-none absolute -inset-2 -z-0 blur-2xl bg-[#F96167]/10 rounded-3xl" />
           </motion.div>
         </div>
       </div>
